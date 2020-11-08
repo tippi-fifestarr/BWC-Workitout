@@ -1,67 +1,67 @@
 const cardsArr = [
     {
         "name" : "dadeucer",
-        "img" : "../CopyDD/images/dalogo.jpg",
+        "img" : "../DuhDeuce/images/dalogo.jpg",
         "reps" : 2,
         "sets" : 2
     },
     {
         "name" : "fifestarr stretch",
-        "img" : "../CopyDD/images/invite-dadeuce.jpg",
+        "img" : "../DuhDeuce/images/invite-dadeuce.jpg",
         "reps" : 1,
         "sets" : 1
     },
     {
         "name" : "lunches",
-        "img" : "../CopyDD/gifs/lunches.gif",
+        "img" : "../DuhDeuce/gifs/lunches.gif",
         "reps" : 25,
         "sets" : 2
     },
     {
       "name" : "push-ups",
-      "img" : "../CopyDD/gifs/pushup.gif",
+      "img" : "../DuhDeuce/gifs/pushup.gif",
       "reps" : 25,
       "time" : null,
       "sets" : 2
     },
     {
       "name" : "Reverse Crunch",
-      "img" : "../CopyDD/gifs/reverse-crunch.gif",
+      "img" : "../DuhDeuce/gifs/reverse-crunch.gif",
       "reps" : 50,
       "time" : null,
       "sets" : 2
     },
     {
       "name" : "L Side-Oblique-Crunch",
-      "img" : "../CopyDD/gifs/Side-Oblique-Crunch.gif",
+      "img" : "../DuhDeuce/gifs/Side-Oblique-Crunch.gif",
       "reps" : 40,
       "time" : null,
       "sets" : 1
     },
     {
       "name" : "Right side Crunck",
-      "img" : "../CopyDD/gifs/side-crunch.gif",
+      "img" : "../DuhDeuce/gifs/side-crunch.gif",
       "reps" : 40,
       "time" : null,
       "sets" : 1
     },
     {
       "name" : "regular Crunch",
-      "img" : "../CopyDD/images/mendelbrott-fractal.jpg",
+      "img" : "../DuhDeuce/images/mendelbrott-fractal.jpg",
       "reps" :50,
       "time" : null,
       "sets" : 2
     },
     {
       "name" : "close grip push ups",
-      "img" : "../CopyDD/gifs/Close-Grip-Push-Ups.gif",
+      "img" : "../DuhDeuce/gifs/Close-Grip-Push-Ups.gif",
       "reps" : 25,
       "time" : null,
       "sets" : 2
     },
     {
       "name" : "standing squats",
-      "img" : "../CopyDD/gifs/squats.gif",
+      "img" : "../DuhDeuce/gifs/squats.gif",
       "reps" : 50,
       "time" : null,
       "sets" : 2
