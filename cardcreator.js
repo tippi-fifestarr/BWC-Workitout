@@ -12,6 +12,24 @@ const cardsArr = [
         "sets" : 1
     },
     {
+      "name" : "PT FLEX LR",
+      "img" : "../DuhDeuce/images/invite-dadeuce.jpg",
+      "reps" : 10,
+      "sets" : 1
+    },
+    {
+      "name" : "PT DIPDOWN LR",
+      "img" : "../DuhDeuce/images/invite-dadeuce.jpg",
+      "reps" : 10,
+      "sets" : 3
+    },
+    {
+      "name" : "PT STEPTAP LR",
+      "img" : "../DuhDeuce/images/invite-dadeuce.jpg",
+      "reps" : 10,
+      "sets" : 3
+    },
+    {
         "name" : "lunches",
         "img" : "../DuhDeuce/gifs/lunches.gif",
         "reps" : 25,
@@ -68,7 +86,8 @@ const cardsArr = [
     }
 ]
 
-var intensityX = prompt('intensity 0-1?');
+var intensityX = 1
+// var intensityX = prompt('intensity 0-1?');
 
 function allowDrop(ev) {
     ev.preventDefault();
@@ -83,19 +102,13 @@ function allowDrop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
   }
-
-// console.log(cardsArr)
 // we are mapping from cardsArr into hero (key value pairs)
 cardsArr.map(hero => {
     // in swell foop, declare OBJECT DESTRUCTURING
     const {name, img, reps, sets} = hero;
     setsLeft = sets
-    console.log(sets)
-    // if (sets >= 1){
         while (setsLeft >= 1){
-            console.log("the first part works")
             makeDatCard(setsLeft, name, img, reps, sets);
-            console.log("maked card")
             setsLeft--;
         }
     // }
@@ -105,12 +118,15 @@ cardsArr.map(hero => {
 })
 
 function makeDatCard(setsLeft, name, src, reps, sets){
-    console.log("makedat"+setsLeft);
+    // console.log("makedat"+setsLeft);
     // this is the card div, the card itself one could say.
     const heroCard = document.createElement("div")
     // in javascript, id is like "name"
     heroCard.id = `${name}${setsLeft}`
     heroCard.draggable="true"
+    heroCard.addEventListener('ondragstart', function(){
+      drag1(ev)
+    })
     // now we are filling the HTML in another feel swoop! ` c o  o   l` 
     heroCard.innerHTML = `
     <p> ${name} </p>
@@ -126,7 +142,6 @@ function makeDatCard(setsLeft, name, src, reps, sets){
         heroCard.classList.add('hide')
       }
     // and append the card
-    console.log("something wrong with list1"+heroCard)
     document.querySelector('#list1').appendChild(heroCard)
 }
 

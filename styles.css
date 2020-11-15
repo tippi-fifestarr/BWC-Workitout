@@ -36,6 +36,7 @@
     grid-gap: 10px;/* Chrome use a fixed height */height: max-content;
     padding: 10px;
     display: flex;
+    flex-direction: column;
   }
   
   .list-title {

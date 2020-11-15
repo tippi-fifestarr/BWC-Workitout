@@ -9,23 +9,35 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    <div style="display: flex;">
+        <div id="div1" ondrop="drop1(event)" ondragover="allowDrop1(event)"style="width: 100px; height:100px; background-color: green;"></div>
+        <div id="div2" ondrop="drop1(event)" ondragover="allowDrop1(event)"style="width: 100px; height:100px; background-color: blue;"></div>
+        <div id="div2" ondrop="drop1(event)" ondragover="allowDrop1(event)"style="width: 100px; height:100px; background-color: purple;"></div>
+    </div>
+    <div>
+        <div id="drag1" draggable="true" ondragstart="drag1(event)" style="width: 100px; height:100px; background-color: black;color:white;">DRAG THIS</div>
+        <div id="drag2" draggable="true" ondragstart="drag1(event)" style="width: 100px; height:100px; background-color: grey;color:white;">DRAG THIS</div>
+    </div>
+
+    
+
     <!-- this is the board -->
     <div class="board-layout">
         <div class="board-title"><b>B</b>ody<b>W</b>eight<b>C</b>hallenge - BWC Board</div>
         <div id='boardlists' class="board-lists">
-            <div id='list1' class="board-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id='list1' class="board-list" ondrop="drop1(event)" ondragover="allowDrop1(event)">
             <div class="list-title">
                 To Do:
             </div>
         </div>
-        <div  id='list2' class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+        <div  id='list2' class="board-list" ondrop="drop1(event)" ondragover="allowDrop1(event)">
           <div  class="list-title">
           In Progress
           </div>
           
           
         </div>
-        <div  id='list3' class="board-list"  ondrop="dropIt(event)" ondragover="allowDrop(event)">
+        <div  id='list3' class="board-list"  ondrop="drop1(event)" ondragover="allowDrop1(event)">
           <div  class="list-title">
             None = Done
             </div>
@@ -33,5 +45,6 @@
             </div>
       </div>
     </div>
+    <script src="dragNDropScript.js"></script>
 <script src='cardcreator.js'></script></body>
 </html>
